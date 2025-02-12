@@ -21,7 +21,7 @@ def check_ping(host="8.8.8.8"):
         return None
 
 # Function to scan active devices in the network
-def scan_network(ip_range="192.168.181.35"):
+def scan_network(ip_range="Your device's IP Address"):
     print("\nScanning network for active devices...")
     arp = ARP(pdst=ip_range)
     ether = Ether(dst="ff:ff:ff:ff:ff:ff")
